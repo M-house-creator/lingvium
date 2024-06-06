@@ -10,19 +10,7 @@ export default function Tarifs() {
         sim: []
     });
 
-    const fetchTable = useCallback(async () => {
-        setLoading(true);
-        const response = await fetch(config.api + "get/tarifs/");
-        const answer = await response.json();
-
-        setData(answer);
-
-        setLoading(false);
-    }, []);
-
-    useEffect(() => {
-        fetchTable();
-    }, [fetchTable]);
+    
 
     return (
         <>

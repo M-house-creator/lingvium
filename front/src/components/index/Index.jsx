@@ -5,27 +5,9 @@ import "./style.css";
 export default function Index() {
     const [loading, setLoading] = useState(false);
 
-    const fetchTable = useCallback(async () => {
-        setLoading(true);
-        const response = await fetch(config.api + "get/collection/list/");
-        const answer = await response.json();
+    
 
-        let labels = [];
-        let numbers = [];
-        let indexes = [];
-
-        answer.forEach((item) => {
-            labels.push(item.TITLE.split(".")[1]);
-            numbers.push(item.DOCUMENTS);
-            indexes.push(item.INDEXES);
-        });
-
-        setLoading(false);
-    }, []);
-
-    useEffect(() => {
-        fetchTable();
-    }, [fetchTable]);
+    
 
     return (
         <>

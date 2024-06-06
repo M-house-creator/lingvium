@@ -10,19 +10,7 @@ export default function Work() {
         sim: []
     });
 
-    const fetchTable = useCallback(async () => {
-        setLoading(true);
-        const response = await fetch(config.api + "get/work/");
-        const answer = await response.json();
-
-        setData(answer);
-
-        setLoading(false);
-    }, []);
-
-    useEffect(() => {
-        fetchTable();
-    }, [fetchTable]);
+    
 
     return (
         <>

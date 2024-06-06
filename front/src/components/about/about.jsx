@@ -10,20 +10,9 @@ export default function About() {
         sim: []
     });
 
-    const fetchTable = useCallback(async () => {
-        setLoading(true);
-        const response = await fetch(config.api + "get/about/");
-        const answer = await response.json();
+    
 
-        console.log(answer)
-        setData(answer);
-
-        setLoading(false);
-    }, []);
-
-    useEffect(() => {
-        fetchTable();
-    }, [fetchTable]);
+    
 
     return (
         <>

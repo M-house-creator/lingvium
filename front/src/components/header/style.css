@@ -2,7 +2,7 @@ header {
     display: flex;
     background: #91ccff;
     justify-content: space-between;
-    padding:px 30px;
+    padding: 30px;
     background-image: url('./image.png');
     background-repeat: no-repeat;
     background-position: 0 -540px;

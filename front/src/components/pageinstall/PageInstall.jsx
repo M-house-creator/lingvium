@@ -10,20 +10,9 @@ export default function PageInstall() {
         sim: []
     });
 
-    const fetchTable = useCallback(async () => {
-        setLoading(true);
-        const response = await fetch(config.api + "get/install/");
-        const answer = await response.json();
+    
 
-        console.log(answer)
-        setData(answer);
-
-        setLoading(false);
-    }, []);
-
-    useEffect(() => {
-        fetchTable();
-    }, [fetchTable]);
+    
 
     return (
         <>

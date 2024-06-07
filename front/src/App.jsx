@@ -28,7 +28,7 @@ function App() {
         <Container curPath={currentPath}></Container>
 
         <footer>
-          Разработали: Шляпников Иван, Рябов Матвей<br/>
+          Lingvium<br/>
           © 2024
         </footer>
       </div>

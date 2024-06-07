@@ -34,14 +34,13 @@ export default function Header({ curPath }) {
 
             <Menu curPath={curPath} />
 
-            {/* <ul>
-                <li><a href='/work'>Принцип работы</a></li>
-                <li><a href='/install'>Установка</a></li>
-                <li><a href='/tarifs'>Тарифы</a></li>
-                <li><a href='/customers'>Регистрация</a></li>
+             <ul>
+                <li><a href='/work'>Главная</a></li>
+                <li><a href='/install'>Преподаватели</a></li>
+                <li><a href='/tarifs'>Занятия</a></li>
+                
                 <li><a href='/about'>О нас</a></li>
-            </ul> */}
-
+            </ul>
             <div className='timer'>{ now.toLocaleTimeString() }</div>
         </header>
 
